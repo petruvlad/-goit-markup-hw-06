@@ -277,7 +277,7 @@ margin-top:12px;
  }
  .address-class {
   margin-top:60px;
-  margin-left:215px;
+  margin-left:40px;
  }
  
  .address-class p {
@@ -520,11 +520,13 @@ border: 1px solid rgba(0, 0, 0, 0.1);
   transition: color var(--transition);
   width: 30px;
   height: 30px;
+  margin:12px;
 }
 
 .close-btn:hover,
 .close-btn:focus {
 color: #000000;
+
 }
 
 
@@ -536,6 +538,7 @@ color: #000000;
   display: flex;
   gap: 4px;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .form-group + .form-group {
@@ -560,6 +563,10 @@ color: #000000;
 }
 
 
+
+label h2{
+  color: #FFFFFF;
+}
 
 .form-group .input-with-icon {
   padding-left: 40px;
@@ -599,8 +606,7 @@ color: #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  padding: 10px 80px;
-
+  
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -612,7 +618,7 @@ color: #000000;
   align-items: center;
   text-align:center;
   letter-spacing: 0.06em;
-  padding: 10px 80px;
+  padding: 40px;
 
   border: none;
   outline: none;
@@ -626,12 +632,13 @@ color: #000000;
 }
 
 .form {
-  margin-top: 40px;
+  margin-left: 40px;
 }
 
-.name-icon:focus,
-.name-icon:hover {
-    color:var(--transition);
+ .input-icon:focus,
+.input-icon:hover {
+    background: #2196F3;
+    transition: var(--transition);
     cursor: pointer;
 
 }
@@ -696,11 +703,10 @@ line-height: 30px;
 /* identical to box height, or 188% */
 color: #FFFFFF;
 letter-spacing: 0.06em;
-margin-left: 12px;
+padding: auto;
 width: 200px;
 height: 50px;
-left: 1185px;
-top: 2787px;
+
 
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -715,4 +721,7 @@ top: 2787px;
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
+}
+.label-footer {
+  padding-left: 40px;
 }
