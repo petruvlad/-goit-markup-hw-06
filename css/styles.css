@@ -224,12 +224,13 @@ align-items: center;
 
  }
 
- .our-team {
+.our-team {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     gap: 30px;
+    
  }
 .our-team li{
 background:var(--backgound-color);
@@ -240,14 +241,15 @@ border-radius: 0px 0px 4px 4px;
 width: 270px;
 height: 428px;
 
+}
 
- }
+.our-team h4,
+.our-team p {
+  text-align: center;
+}
 
  .work-class {
   background-color: var(--backgound-color);
- 
-
-  
 
  }
   
@@ -386,6 +388,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 .icon-list {
   display: flex;
   gap:10px;
+  justify-content: center;
 }
 
 .icon-list  svg {
@@ -394,6 +397,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   display: flex;
   justify-content: center;
  background: #FFFFFF1A;
+ 
 }
 
 .icon-list .icon {
@@ -414,29 +418,35 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 
 
 
+.section-customer h2 {
+  text-align: center;
+}
 
-.section-customer {
+
+.section-customer ul {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1170px;
   height: 184px;
   background-color: var(--backgound-color);
+  list-style: none;
+  gap: 10px;
   
 
-
+ 
+  
 }
-
-.icon-customer .list-customer svg {
-  width: 106px;
-  height: 60px;
-}
-
- .icon-customer svg {
-  width: 170px;
-  height: 92px;
+.section-customer .customer {
   border: 1px solid #AFB1B8;
-  gap: 10px;
+
+
+}
+
+.customer svg {
+  width: 170px;
+height: 92px;
+
 }
 
 .footer-class h2 {
@@ -470,16 +480,32 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     margin:25px 100px;
 }
 
+ .icon-list- svg {
+  
+  height: 20px;
+  width: 20px;
+  margin-left: 70px;
+  background: rgba(255, 255, 255, 0.1);
+ }
 
 
+ .icon-list-footer svg {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-left: 70px;
+  background: rgba(255, 255, 255, 0.1);
 
-.icon-list .icon-twiter:hover,
- .icon-list .icon-twiter:focus {
+
+ }
+
+.icon-list-footer .icon-twiter:hover,
+ .icon-list-footer .icon-twiter:focus {
   background: #2196F3;
 transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;
-}
-
+cursor: pointer;
+} 
 /* Modal */
 .modal {
   position: fixed;
